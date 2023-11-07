@@ -75,31 +75,12 @@ export default function RegistrationForm() {
         email: email,
         phone: phone,
       });
+      alert("data inserted successfully")
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
       console.error("Error adding document: ", e);
     }
-
-    const testVar = {"name":name,'emial':email,'phone':phone}
-    console.log(testVar);
-     // POST the data to the URL of the form
-    fetch(formURL, {
-      method: "POST",
-      body: JSON.stringify(testVar),
-      headers: {
-        'accept': 'application/json',
-      },
-    }).then((response) => response.json())
-    .then((data) => {
-      setFormData({ 
-        name: "", 
-        email: "", 
-        message: "" 
-      })
-      //alert(data);
-      setFormSuccess(true)
-      setFormSuccessMessage(data.submission_text)
-    })
+  
   }
 
   return (
