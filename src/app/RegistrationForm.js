@@ -94,7 +94,13 @@ export default function RegistrationForm() {
         <label for="name" class="w-1/2 block text-sm font-medium leading-6 text-gray-900 text-right">فسحة زمنية</label>
       </div>
         <div class="mt-2">
-          
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Select Time Slot</option>
+            <option value="09:00-09:05">09:00-09:05</option>
+            <option value="09:05-09:10">09:05-09:10</option>
+            <option value="09:10-09:15">09:10-09:15</option>
+            <option value="09:15-09:20">09:15-09:20</option>
+          </select>
         </div>
       </div>
    <div>
