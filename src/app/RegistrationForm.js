@@ -35,40 +35,7 @@ export default function RegistrationForm() {
   const submitForm = async (e) => {
     // We don't want the page to refresh
     e.preventDefault()
-
-    
-
-    const formURL = e.target.action
-    const data = new FormData()
-    let name = '';
-    let email = '';
-    let phone = '';
-
-    // Turn our formData state into data we can use with a form submission
-    Object.entries(formData).forEach(([key, value]) => {
-      data.append(key, value);
-    })
-
-    //console.log(data.entries());
-    //const =  name, email, phone;
-    for (const pair of data.entries()) {
-
-      //console.log(`${pair[0]}, ${pair[1]}`);
-
-      if(`${pair[0]}` === 'name')
-      {
-        name = `${pair[1]}`;
-      }
-      if(`${pair[0]}` === 'email')
-      {
-        email = `${pair[1]}`;
-      }
-      if(`${pair[0]}` === 'phone')
-      {
-        phone = `${pair[1]}`;
-      }
-
-    }
+   
     try {
       const docRef = await addDoc(collection(db, "users"), {
         name: name,
