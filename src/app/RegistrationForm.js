@@ -71,9 +71,9 @@ export default function RegistrationForm() {
     }
     try {
       const docRef = await addDoc(collection(db, "users"), {
-        first: name,
-        last: email,
-        born: phone
+        name: name,
+        email: email,
+        phone: phone
       });
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
