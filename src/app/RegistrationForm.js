@@ -113,7 +113,7 @@ export default function RegistrationForm() {
     <form class="space-y-6" action="/api/submit/" method="POST"  onSubmit={submitForm}>
     <div>
       <div className='flex'>
-        <label for="name" class="w-1/2 block text-sm font-medium leading-6 text-gray-900">Full Name</label>
+        <label for="name" class="w-1/2 block text-sm font-medium leading-6 text-gray-900">Full Name new</label>
         <label for="name" class="w-1/2 block text-sm font-medium leading-6 text-gray-900 text-right">الاسم الكامل</label>
       </div>
         
